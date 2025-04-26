@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, rgb(94, 4, 168), rgb(60, 0, 255));
+    flex-direction: row;
+}
+#heading {
+    position: absolute;
+    left: 44vw;
+    top: 0px;
+    color: red;
+    border: 3px solid red;
+    opacity: 1;
+    animation: fadeOut 2s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.grp1, .grp2{
+    height: 100vh;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#p1, #p2{
+    height: 20px;
+    width: 60px;
+    position: absolute;
+    top: 60px;
+}
+
+.player{
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(14, 183, 14);
+    border: 0px solid white;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 60px;
+    margin-bottom: 30px;
+    
+}
+.container{
+    height: 80vh;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+}
+.board{
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.cell{
+    border: 3px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+button{
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(14, 183, 14);
+    border: 3px solid rgb(14, 183, 14);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid black;
+}    
+
+#winner{
+    margin-top: 10px;
+    color: rgb(236, 13, 13);
+    height: auto;
+    width: auto;
+    padding: 3px;
+    background-color: rgb(209, 235, 12);
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
